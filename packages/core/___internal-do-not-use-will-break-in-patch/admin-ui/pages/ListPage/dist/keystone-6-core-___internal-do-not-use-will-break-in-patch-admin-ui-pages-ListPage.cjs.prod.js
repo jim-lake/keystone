@@ -13,7 +13,7 @@ var modals = require('@keystone-ui/modals');
 var toast = require('@keystone-ui/toast');
 var SearchIcon = require('@keystone-ui/icons/icons/SearchIcon');
 var dataGetter = require('../../../../../dist/dataGetter-2824eb60.cjs.prod.js');
-require('../../../../../dist/Fields-ec4f4464.cjs.prod.js');
+require('../../../../../dist/Fields-f6e48bac.cjs.prod.js');
 var getRootGraphQLFieldsFromFieldController = require('../../../../../dist/getRootGraphQLFieldsFromFieldController-713db5a8.cjs.prod.js');
 require('fast-deep-equal');
 var client = require('@apollo/client');

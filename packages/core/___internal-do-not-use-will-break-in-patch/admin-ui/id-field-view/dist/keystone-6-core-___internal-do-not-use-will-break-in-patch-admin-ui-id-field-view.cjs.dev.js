@@ -27,7 +27,7 @@ require('@keystone-ui/icons/icons/MoreHorizontalIcon');
 require('@keystone-ui/icons/icons/ChevronRightIcon');
 require('next/head');
 require('../../../../dist/SignoutButton-94652c56.cjs.dev.js');
-require('../../../../dist/Fields-b4278943.cjs.dev.js');
+require('../../../../dist/Fields-2c77f94f.cjs.dev.js');
 require('fast-deep-equal');
 require('@keystone-ui/notice');
 require('../../../../admin-ui/router/dist/keystone-6-core-admin-ui-router.cjs.dev.js');

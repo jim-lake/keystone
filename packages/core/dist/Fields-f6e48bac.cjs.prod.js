@@ -10,12 +10,14 @@ const RenderField = /*#__PURE__*/React.memo(function RenderField(_ref) {
   let {
     field,
     value,
+    itemValue,
     autoFocus,
     forceValidation,
     onChange
   } = _ref;
   return core.jsx(field.views.Field, {
     field: field.controller,
+    itemValue: itemValue,
     onChange: React.useMemo(() => {
       if (onChange === undefined) return undefined;
       return value => {
@@ -65,6 +67,7 @@ function Fields(_ref2) {
       key: fieldKey,
       field: field,
       value: val.value,
+      itemValue: value,
       forceValidation: forceValidation && invalidFields.has(fieldKey),
       onChange: fieldMode === 'edit' ? onChange : undefined,
       autoFocus: index === 0

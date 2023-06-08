@@ -3,10 +3,10 @@
 var core = require('@keystone-ui/core');
 var modals = require('@keystone-ui/modals');
 var loading = require('@keystone-ui/loading');
-var adminUi_context_dist_keystone6CoreAdminUiContext = require('../admin-ui/context/dist/keystone-6-core-admin-ui-context.cjs.prod.js');
-var Fields = require('./Fields-ec4f4464.cjs.prod.js');
-var useCreateItem = require('./useCreateItem-6046995b.cjs.prod.js');
-var GraphQLErrorNotice = require('./GraphQLErrorNotice-46a95125.cjs.prod.js');
+var adminUi_context_dist_keystone6CoreAdminUiContext = require('../admin-ui/context/dist/keystone-6-core-admin-ui-context.cjs.dev.js');
+var Fields = require('./Fields-2c77f94f.cjs.dev.js');
+var useCreateItem = require('./useCreateItem-dcb6fd86.cjs.dev.js');
+var GraphQLErrorNotice = require('./GraphQLErrorNotice-b11fa9f5.cjs.dev.js');
 
 /** @jsxRuntime classic */
 function CreateItemDrawer(_ref) {

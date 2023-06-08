@@ -1,22 +1,22 @@
-'use strict';
-
-var core = require('@keystone-ui/core');
-var React = require('react');
-var fields = require('@keystone-ui/fields');
-var button = require('@keystone-ui/button');
+import { jsx, Stack, useTheme, Text } from '@keystone-ui/core';
+import { useId, useContext, memo, useMemo } from 'react';
+import { FieldDescription } from '@keystone-ui/fields';
+import { ButtonContext } from '@keystone-ui/button';
 
 /** @jsxRuntime classic */
-const RenderField = /*#__PURE__*/React.memo(function RenderField(_ref) {
+const RenderField = /*#__PURE__*/memo(function RenderField(_ref) {
   let {
     field,
     value,
+    itemValue,
     autoFocus,
     forceValidation,
     onChange
   } = _ref;
-  return core.jsx(field.views.Field, {
+  return jsx(field.views.Field, {
     field: field.controller,
-    onChange: React.useMemo(() => {
+    itemValue: itemValue,
+    onChange: useMemo(() => {
       if (onChange === undefined) return undefined;
       return value => {
         onChange(val => ({
@@ -53,18 +53,19 @@ function Fields(_ref2) {
     if (fieldMode === 'hidden') return [fieldKey, null];
     if (fieldPosition !== position) return [fieldKey, null];
     if (val.kind === 'error') {
-      return [fieldKey, core.jsx("div", {
+      return [fieldKey, jsx("div", {
         key: fieldKey
-      }, field.label, ": ", core.jsx("span", {
+      }, field.label, ": ", jsx("span", {
         css: {
           color: 'red'
         }
       }, val.errors[0].message))];
     }
-    return [fieldKey, core.jsx(RenderField, {
+    return [fieldKey, jsx(RenderField, {
       key: fieldKey,
       field: field,
       value: val.value,
+      itemValue: value,
       forceValidation: forceValidation && invalidFields.has(fieldKey),
       onChange: fieldMode === 'edit' ? onChange : undefined,
       autoFocus: index === 0
@@ -96,7 +97,7 @@ function Fields(_ref2) {
       if (renderedFieldsInGroup.every(field => field === null)) {
         continue;
       }
-      rendered.push(core.jsx(FieldGroup, {
+      rendered.push(jsx(FieldGroup, {
         label: group.label,
         description: group.description
       }, renderedFieldsInGroup));
@@ -107,37 +108,37 @@ function Fields(_ref2) {
     }
     rendered.push(renderedFields[fieldKey]);
   }
-  return core.jsx(core.Stack, {
+  return jsx(Stack, {
     gap: "xlarge"
   }, rendered.length === 0 ? 'There are no fields that you can read or edit' : rendered);
 }
 function FieldGroup(props) {
-  const descriptionId = React.useId();
-  const labelId = React.useId();
-  const theme = core.useTheme();
+  const descriptionId = useId();
+  const labelId = useId();
+  const theme = useTheme();
   const buttonSize = 24;
   const {
     useButtonStyles,
     useButtonTokens,
     defaults
-  } = React.useContext(button.ButtonContext);
+  } = useContext(ButtonContext);
   const buttonStyles = useButtonStyles({
     tokens: useButtonTokens(defaults)
   });
-  const divider = core.jsx("div", {
+  const divider = jsx("div", {
     css: {
       height: '100%',
       width: 2,
       backgroundColor: theme.colors.border
     }
   });
-  return core.jsx("div", {
+  return jsx("div", {
     role: "group",
     "aria-labelledby": labelId,
     "aria-describedby": props.description === null ? undefined : descriptionId
-  }, core.jsx("details", {
+  }, jsx("details", {
     open: true
-  }, core.jsx("summary", {
+  }, jsx("summary", {
     css: {
       listStyle: 'none',
       outline: 0,
@@ -145,10 +146,10 @@ function FieldGroup(props) {
         display: 'none'
       }
     }
-  }, core.jsx(core.Stack, {
+  }, jsx(Stack, {
     across: true,
     gap: "medium"
-  }, core.jsx("div", {
+  }, jsx("div", {
     // this is a div rather than a button because the interactive element here is the <summary> above
     css: {
       ...buttonStyles,
@@ -160,35 +161,35 @@ function FieldGroup(props) {
         transform: 'rotate(90deg)'
       }
     }
-  }, downChevron), divider, core.jsx(core.Text, {
+  }, downChevron), divider, jsx(Text, {
     id: labelId,
     size: "large",
     weight: "bold",
     css: {
       position: 'relative'
     }
-  }, props.label))), core.jsx(core.Stack, {
+  }, props.label))), jsx(Stack, {
     across: true,
     gap: "medium"
-  }, core.jsx("div", {
+  }, jsx("div", {
     css: {
       width: buttonSize
     }
-  }), divider, core.jsx("div", null, props.description !== null && core.jsx(fields.FieldDescription, {
+  }), divider, jsx("div", null, props.description !== null && jsx(FieldDescription, {
     id: descriptionId
-  }, props.description), core.jsx(core.Stack, {
+  }, props.description), jsx(Stack, {
     marginTop: "xlarge",
     gap: "xlarge"
   }, props.children)))));
 }
-const downChevron = core.jsx("svg", {
+const downChevron = jsx("svg", {
   width: "16",
   height: "16",
   viewBox: "0 0 12 12",
   xmlns: "http://www.w3.org/2000/svg"
-}, core.jsx("path", {
+}, jsx("path", {
   d: "M5 3L8.75 6L5 9L5 3Z",
   fill: "currentColor"
 }));
 
-exports.Fields = Fields;
+export { Fields as F };

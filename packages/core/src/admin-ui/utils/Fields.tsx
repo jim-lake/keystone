@@ -18,6 +18,7 @@ type RenderFieldProps = {
 const RenderField = memo(function RenderField({
   field,
   value,
+  itemValue,
   autoFocus,
   forceValidation,
   onChange,
@@ -25,6 +26,7 @@ const RenderField = memo(function RenderField({
   return (
     <field.views.Field
       field={field.controller}
+      itemValue={itemValue}
       onChange={useMemo(() => {
         if (onChange === undefined) return undefined;
         return value => {
@@ -83,6 +85,7 @@ export function Fields({
           key={fieldKey}
           field={field}
           value={val.value}
+          itemValue={value}
           forceValidation={forceValidation && invalidFields.has(fieldKey)}
           onChange={fieldMode === 'edit' ? onChange : undefined}
           autoFocus={index === 0}

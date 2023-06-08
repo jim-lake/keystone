@@ -2,7 +2,7 @@ export { C as CellContainer } from '../../../dist/CellContainer-8cce1185.esm.js'
 export { C as CellLink } from '../../../dist/CellLink-c169ac58.esm.js';
 export { E as ErrorBoundary, a as ErrorContainer } from '../../../dist/Errors-f59723d8.esm.js';
 export { d as ListNavItem, c as ListNavItems, L as Logo, b as NavItem, N as Navigation, a as NavigationContainer, P as PageContainer } from '../../../dist/PageContainer-0d8d0d38.esm.js';
-export { C as CreateItemDrawer } from '../../../dist/CreateItemDrawer-7a696da3.esm.js';
+export { C as CreateItemDrawer } from '../../../dist/CreateItemDrawer-c7086fe7.esm.js';
 export { G as GraphQLErrorNotice } from '../../../dist/GraphQLErrorNotice-b586b151.esm.js';
 import '@babel/runtime/helpers/extends';
 import '@keystone-ui/core';
@@ -37,7 +37,7 @@ import '@apollo/client';
 import '../../../dist/admin-meta-graphql-75e8cfcb.esm.js';
 import '../../../dist/dataGetter-54fa8f6b.esm.js';
 import '../../../dist/SignoutButton-ef277bf5.esm.js';
-import '../../../dist/Fields-ff30179b.esm.js';
+import '../../../dist/Fields-6156179c.esm.js';
 import '@keystone-ui/fields';
 import '../../../dist/useCreateItem-2ddc288f.esm.js';
 import 'fast-deep-equal';

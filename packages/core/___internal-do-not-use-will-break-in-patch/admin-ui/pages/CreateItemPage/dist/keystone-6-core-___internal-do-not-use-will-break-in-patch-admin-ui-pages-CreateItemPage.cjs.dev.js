@@ -6,7 +6,7 @@ var core = require('@keystone-ui/core');
 var loading = require('@keystone-ui/loading');
 var button = require('@keystone-ui/button');
 var router = require('next/router');
-var Fields = require('../../../../../dist/Fields-b4278943.cjs.dev.js');
+var Fields = require('../../../../../dist/Fields-2c77f94f.cjs.dev.js');
 require('../../../../../dist/getRootGraphQLFieldsFromFieldController-e2b649ed.cjs.dev.js');
 require('react');
 require('fast-deep-equal');

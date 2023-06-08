@@ -3,7 +3,7 @@
 Object.defineProperty(exports, '__esModule', { value: true });
 
 var dataGetter = require('../../../dist/dataGetter-cce02896.cjs.dev.js');
-var Fields = require('../../../dist/Fields-b4278943.cjs.dev.js');
+var Fields = require('../../../dist/Fields-2c77f94f.cjs.dev.js');
 var getRootGraphQLFieldsFromFieldController = require('../../../dist/getRootGraphQLFieldsFromFieldController-e2b649ed.cjs.dev.js');
 var useInvalidFields = require('../../../dist/useInvalidFields-7ad269b2.cjs.dev.js');
 require('@keystone-ui/core');

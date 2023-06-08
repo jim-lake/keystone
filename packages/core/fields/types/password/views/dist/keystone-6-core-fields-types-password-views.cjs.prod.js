@@ -31,7 +31,7 @@ require('@keystone-ui/popover');
 require('@keystone-ui/icons/icons/MoreHorizontalIcon');
 require('@keystone-ui/icons/icons/ChevronRightIcon');
 require('../../../../../dist/SignoutButton-9832e663.cjs.prod.js');
-require('../../../../../dist/Fields-ec4f4464.cjs.prod.js');
+require('../../../../../dist/Fields-f6e48bac.cjs.prod.js');
 require('fast-deep-equal');
 require('@keystone-ui/notice');
 require('decimal.js');

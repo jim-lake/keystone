@@ -1,12 +1,10 @@
-'use strict';
-
-var core = require('@keystone-ui/core');
-var modals = require('@keystone-ui/modals');
-var loading = require('@keystone-ui/loading');
-var adminUi_context_dist_keystone6CoreAdminUiContext = require('../admin-ui/context/dist/keystone-6-core-admin-ui-context.cjs.dev.js');
-var Fields = require('./Fields-b4278943.cjs.dev.js');
-var useCreateItem = require('./useCreateItem-dcb6fd86.cjs.dev.js');
-var GraphQLErrorNotice = require('./GraphQLErrorNotice-b11fa9f5.cjs.dev.js');
+import { jsx, Box } from '@keystone-ui/core';
+import { Drawer } from '@keystone-ui/modals';
+import { LoadingDots } from '@keystone-ui/loading';
+import { useKeystone, useList } from '../admin-ui/context/dist/keystone-6-core-admin-ui-context.esm.js';
+import { F as Fields } from './Fields-6156179c.esm.js';
+import { u as useCreateItem } from './useCreateItem-2ddc288f.esm.js';
+import { G as GraphQLErrorNotice } from './GraphQLErrorNotice-b586b151.esm.js';
 
 /** @jsxRuntime classic */
 function CreateItemDrawer(_ref) {
@@ -18,10 +16,10 @@ function CreateItemDrawer(_ref) {
   } = _ref;
   const {
     createViewFieldModes
-  } = adminUi_context_dist_keystone6CoreAdminUiContext.useKeystone();
-  const list = adminUi_context_dist_keystone6CoreAdminUiContext.useList(listKey);
-  const createItemState = useCreateItem.useCreateItem(list);
-  return core.jsx(modals.Drawer, {
+  } = useKeystone();
+  const list = useList(listKey);
+  const createItemState = useCreateItem(list);
+  return jsx(Drawer, {
     title: `Create ${list.singular}`,
     width: "wide",
     actions: {
@@ -47,17 +45,17 @@ function CreateItemDrawer(_ref) {
         }
       }
     }
-  }, createViewFieldModes.state === 'error' && core.jsx(GraphQLErrorNotice.GraphQLErrorNotice, {
+  }, createViewFieldModes.state === 'error' && jsx(GraphQLErrorNotice, {
     networkError: createViewFieldModes.error instanceof Error ? createViewFieldModes.error : undefined,
     errors: createViewFieldModes.error instanceof Error ? undefined : createViewFieldModes.error
-  }), createViewFieldModes.state === 'loading' && core.jsx(loading.LoadingDots, {
+  }), createViewFieldModes.state === 'loading' && jsx(LoadingDots, {
     label: "Loading create form"
-  }), createItemState.error && core.jsx(GraphQLErrorNotice.GraphQLErrorNotice, {
+  }), createItemState.error && jsx(GraphQLErrorNotice, {
     networkError: (_createItemState$erro = createItemState.error) === null || _createItemState$erro === void 0 ? void 0 : _createItemState$erro.networkError,
     errors: (_createItemState$erro2 = createItemState.error) === null || _createItemState$erro2 === void 0 ? void 0 : _createItemState$erro2.graphQLErrors
-  }), core.jsx(core.Box, {
+  }), jsx(Box, {
     paddingY: "xlarge"
-  }, core.jsx(Fields.Fields, createItemState.props)));
+  }, jsx(Fields, createItemState.props)));
 }
 
-exports.CreateItemDrawer = CreateItemDrawer;
+export { CreateItemDrawer as C };

@@ -8,7 +8,7 @@ var core = require('@keystone-ui/core');
 var PlusIcon = require('@keystone-ui/icons/icons/PlusIcon');
 var loading = require('@keystone-ui/loading');
 var dataGetter = require('../../../../../dist/dataGetter-cce02896.cjs.dev.js');
-require('../../../../../dist/Fields-b4278943.cjs.dev.js');
+require('../../../../../dist/Fields-2c77f94f.cjs.dev.js');
 require('../../../../../dist/getRootGraphQLFieldsFromFieldController-e2b649ed.cjs.dev.js');
 require('fast-deep-equal');
 var PageContainer = require('../../../../../dist/PageContainer-6e3879ad.cjs.dev.js');

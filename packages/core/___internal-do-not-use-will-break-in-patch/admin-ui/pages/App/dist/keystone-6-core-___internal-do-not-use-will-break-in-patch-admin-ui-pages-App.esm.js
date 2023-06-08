@@ -13,7 +13,7 @@ import '@keystone-ui/icons/icons/ChevronRightIcon';
 import '../../../../../dist/SignoutButton-ef277bf5.esm.js';
 import '@keystone-ui/modals';
 import '@keystone-ui/loading';
-import '../../../../../dist/Fields-ff30179b.esm.js';
+import '../../../../../dist/Fields-6156179c.esm.js';
 import '@keystone-ui/toast';
 import 'fast-deep-equal';
 import '@apollo/client';

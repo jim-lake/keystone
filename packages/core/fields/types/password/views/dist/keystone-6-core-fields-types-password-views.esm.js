@@ -27,7 +27,7 @@ import '@keystone-ui/popover';
 import '@keystone-ui/icons/icons/MoreHorizontalIcon';
 import '@keystone-ui/icons/icons/ChevronRightIcon';
 import '../../../../../dist/SignoutButton-ef277bf5.esm.js';
-import '../../../../../dist/Fields-ff30179b.esm.js';
+import '../../../../../dist/Fields-6156179c.esm.js';
 import 'fast-deep-equal';
 import '@keystone-ui/notice';
 import 'decimal.js';
