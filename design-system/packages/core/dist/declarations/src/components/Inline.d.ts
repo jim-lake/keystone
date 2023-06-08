@@ -14,7 +14,7 @@ export declare const Inline: <Comp extends import("react").ElementType = "div">(
     /** Each item in the container. */
     children: ReactNode;
     /** The size of the gap between each item. */
-    gap?: "small" | "none" | "large" | "medium" | "xxsmall" | "xsmall" | "xlarge" | "xxlarge" | undefined;
+    gap?: "small" | "none" | "medium" | "large" | "xxsmall" | "xsmall" | "xlarge" | "xxlarge" | undefined;
 } & import("./Box").ColorProps & import("./Box").RadiiProps & import("./Box").MarginProps & import("./Box").PaddingProps & {
     textAlign?: (("center" | "end" | "justify" | "left" | "right" | "start") | readonly (("center" | "end" | "justify" | "left" | "right" | "start") | null)[]) | undefined;
     height?: import("../types").ResponsiveProp<string | number> | undefined;

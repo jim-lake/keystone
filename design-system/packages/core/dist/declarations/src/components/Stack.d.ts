@@ -38,7 +38,7 @@ export declare const Stack: <Comp extends import("react").ElementType = "div">(p
     /** The placement, if any, of the dividing elements. */
     dividers?: "end" | "start" | "none" | "around" | "between" | undefined;
     /** The size of the gap between each element in the stack. */
-    gap?: "small" | "none" | "large" | "medium" | "xxsmall" | "xsmall" | "xlarge" | "xxlarge" | undefined;
+    gap?: "small" | "none" | "medium" | "large" | "xxsmall" | "xsmall" | "xlarge" | "xxlarge" | undefined;
 } & import("./Box").ColorProps & import("./Box").RadiiProps & import("./Box").MarginProps & import("./Box").PaddingProps & {
     textAlign?: (("center" | "end" | "justify" | "left" | "right" | "start") | readonly (("center" | "end" | "justify" | "left" | "right" | "start") | null)[]) | undefined;
     height?: import("../types").ResponsiveProp<string | number> | undefined;

@@ -19,7 +19,7 @@ export declare const createIcon: (children: ReactNode, name: string) => import("
     /** The color for the SVG fill property. */
     color?: string | undefined;
     /** The size key for the icon. */
-    size?: number | ResponsiveProp<"small" | "large" | "medium" | "smallish" | "largish"> | undefined;
+    size?: number | ResponsiveProp<"small" | "medium" | "large" | "smallish" | "largish"> | undefined;
 } & import("react").RefAttributes<SVGSVGElement>>;
 export {};
 //# sourceMappingURL=Icon.d.ts.map
