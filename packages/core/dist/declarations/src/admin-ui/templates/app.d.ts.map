@@ -1,0 +1,1 @@
+{"version":3,"file":"app.d.ts","sourceRoot":"../../../../../src/admin-ui/templates","sources":["app.ts"],"names":[],"mappings":"AACA,OAAO,EAIL,aAAa,EAOd,MAAM,SAAS,CAAC;AAEjB,OAAO,EAAE,gBAAgB,EAAE,MAAM,2BAA2B,CAAC;AAE7D,KAAK,kBAAkB,GAAG;IAAE,gBAAgB,EAAE,OAAO,CAAA;CAAE,CAAC;AAExD,eAAO,MAAM,WAAW,qBACJ,gBAAgB,iBACnB,aAAa,wBACN,kBAAkB,WAC/B,MAAM,WA6ChB,CAAC"}

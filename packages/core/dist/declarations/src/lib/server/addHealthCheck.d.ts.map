@@ -1,0 +1,1 @@
+{"version":3,"file":"addHealthCheck.d.ts","sourceRoot":"../../../../../src/lib/server","sources":["addHealthCheck.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,WAAW,EAAE,MAAM,SAAS,CAAC;AACtC,OAAO,KAAK,EAAE,cAAc,EAAE,MAAM,aAAa,CAAC;AAIlD,KAAK,kBAAkB,GAAG;IAAE,MAAM,EAAE,cAAc,CAAC;IAAC,MAAM,EAAE,WAAW,CAAA;CAAE,CAAC;AAE1E,wBAAsB,cAAc,CAAC,EAAE,MAAM,EAAE,MAAM,EAAE,EAAE,kBAAkB,iBAe1E"}

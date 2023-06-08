@@ -1,0 +1,1 @@
+{"version":3,"file":"InitPage.d.ts","sourceRoot":"../../../../src/pages","sources":["InitPage.tsx"],"names":[],"mappings":"AAAA,0BAA0B;AAC1B,eAAe;AAKf,OAAO,EAAE,GAAG,EAAqC,MAAM,mBAAmB,CAAC;AA4I3E,KAAK,aAAa,GAAG;IACnB,OAAO,EAAE,MAAM,CAAC;IAChB,UAAU,EAAE,MAAM,EAAE,CAAC;IACrB,aAAa,EAAE,OAAO,CAAC;CACxB,CAAC;AAuHF,eAAO,MAAM,WAAW,UAAW,aAAa,0BAAkC,CAAC"}

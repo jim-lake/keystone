@@ -1,0 +1,1 @@
+{"version":3,"file":"FieldDescription.d.ts","sourceRoot":"../../../src","sources":["FieldDescription.tsx"],"names":[],"mappings":"AAAA,0BAA0B;AAC1B,eAAe;AAEf,OAAO,EAAE,GAAG,EAAY,MAAM,mBAAmB,CAAC;AAElD,KAAK,qBAAqB,GAAG;IAC3B,EAAE,EAAE,MAAM,CAAC;IACX,QAAQ,EAAE,MAAM,GAAG,IAAI,CAAC;CACzB,CAAC;AAEF,eAAO,MAAM,gBAAgB,UAAW,qBAAqB,2BAgB5D,CAAC"}
